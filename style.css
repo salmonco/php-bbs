@@ -1,0 +1,405 @@
+:root {
+  --accent-color: #e8eaf6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+input {
+  box-shadow: none;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+input[type="submit"] {
+  background: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  font-family: "Roboto", sans-serif;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+/* header */
+header {
+  background: #b1bfca;
+  border-bottom: 3px solid #e3f2fd;
+}
+
+.header {
+  width: 1200px;
+  height: 110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header .logoNmenu {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo {
+  padding: 8px 15px;
+  margin: 0 20px 0 0;
+  font-family: "Zen Tokyo Zoo", cursive;
+  font-size: 30px;
+}
+
+.header .search {
+  position: absolute;
+  top: 7px;
+  right: 170px;
+}
+
+.header .search input {
+  border-radius: 4px;
+  -webkit-appearance: none;
+  width: 200px;
+  height: 25px;
+  border: 1px solid aqua;
+  text-indent: 5px;
+}
+
+.header .search .searchIcon {
+  position: relative;
+  right: 24px;
+  color: #b1bfca;
+}
+
+.header .search button {
+  background: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.header ul {
+  display: flex;
+}
+
+.header .menu ul li a {
+  padding: 8px 20px;
+}
+.header .menu ul li a:hover {
+  color: var(--accent-color);
+}
+
+.header .menu ul li:nth-child(1)::after {
+  content: "|";
+  color: var(--accent-color);
+  float: right;
+  position: relative;
+  top: -2px;
+}
+
+.header .form ul li {
+  margin: 0 10px 0 0;
+  font-size: 16px;
+}
+
+.header .form ul li a {
+  padding: 8px 10px;
+}
+
+/*footer*/
+.footer {
+  width: 100%;
+  background: #e4e4e4;
+  position: absolute;
+  top: 1000px;
+}
+
+.footerContainer {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 150px;
+}
+
+/*list*/
+.listContainer {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.listContainer .listIntro {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-bottom: 2px solid #b1bfca;
+}
+
+.listContainer .listIntro p {
+  padding: 5px 7px 0 0;
+}
+
+.listContainer .listIntro i {
+  position: relative;
+  right: 3px;
+  color: #b1bfca;
+}
+
+.listContainer .listTable {
+  width: 1100px;
+}
+
+.listContainer .listTable th {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid aquamarine;
+}
+
+.listContainer .listTable td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid aqua;
+  background: var(--accent-color);
+}
+
+/*write*/
+.writeContainer {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.writeContainer .writeIntro {
+  padding: 30px 0;
+  border-bottom: 2px solid #b1bfca;
+}
+
+.writeContainer .write .writeBtn {
+  padding: 10px;
+  font-size: 17px;
+  background: var(--accent-color);
+  border-radius: 4px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+.writeContainer .write textarea {
+  width: 1000px;
+  height: 400px;
+  resize: none;
+}
+
+.writeContainer .write .writeName {
+  box-sizing: border-box;
+  margin: 10px 0;
+  width: 1000px;
+  height: 40px;
+  font-size: 20px;
+  text-indent: 5px;
+  border: 1px solid var(--accent-color);
+}
+
+.writeContainer .write .writeContent {
+  font-size: 17px;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 1px solid var(--accent-color);
+}
+
+/*search_result*/
+.search_resultContainer {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.search_resultContainer .search_resultIntro {
+  padding: 30px 0;
+  border-bottom: 2px solid #b1bfca;
+}
+
+.search_resultContainer .search_resultTable {
+  width: 1100px;
+}
+
+.search_resultContainer .search_resultTable th {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid aquamarine;
+}
+
+.search_resultContainer .search_resultTable td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid aqua;
+  background: var(--accent-color);
+}
+
+/*view*/
+.viewContainer {
+  width: 1000px;
+  margin: 60px auto;
+  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
+  padding: 20px;
+}
+.viewContainer .infoContainer {
+  border-bottom: 1px solid var(--accent-color);
+  padding: 0 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.viewContainer .infoContainer h4 {
+  padding: 10px 0;
+}
+
+.viewContainer .infoContainer .infoDetail {
+  display: flex;
+}
+
+.viewContainer .infoContainer .infoDetail .viewNum {
+  padding: 0 0 0 10px;
+  font-size: 14px;
+}
+
+.viewContainer .messageContainer {
+  padding: 20px 0 0 0;
+}
+
+.updelBtn {
+  align-self: flex-end;
+}
+
+.updateBtn {
+  width: 35px;
+  height: 25px;
+  padding: 10px;
+  font-size: 17px;
+  background: var(--accent-color);
+  border-radius: 4px;
+}
+
+.deleteBtn {
+  width: 35px;
+  height: 25px;
+  padding: 10px;
+  font-size: 17px;
+  background: var(--accent-color);
+  border-radius: 4px;
+  margin: 0 0 0 15px;
+}
+
+.listComback {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.listComback a:hover {
+  color: aquamarine;
+}
+
+/*login*/
+.loginContainer {
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 100px 0 0 0;
+}
+
+.login {
+  width: 300px;
+  height: 50px;
+  border: 1px solid #b1bfca;
+  font-size: 20px;
+  text-indent: 11px;
+  background: var(--accent-color);
+}
+
+.fir {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: none;
+}
+
+.sec {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.loginBtn {
+  width: 300px;
+  height: 50px;
+  border: 1px solid #b1bfca;
+  font-size: 20px;
+  margin: 10px 0 0 0;
+  border-radius: 4px;
+  cursor: pointer;
+  background: rgb(51, 103, 248);
+  color: #fff;
+}
+
+#join {
+  background: inherit;
+  border: none;
+  cursor: pointer;
+  color: rgb(51, 103, 248);
+}
+
+.pageLogo {
+  padding: 8px 15px;
+  font-family: "Zen Tokyo Zoo", cursive;
+  font-size: 27px;
+}
+
+/*join*/
+.email {
+  margin: 10px 0 0 0;
+  border-radius: 4px;
+}
+
+/*main*/
+.mainContainer {
+  width: 100%;
+  height: 890px;
+  background: var(--accent-color);
+}
+
+.mainSection {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.mainLeft {
+  border: 1px solid aquamarine;
+  background: #b1bfca;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+  font-size: 70px;
+  margin: 100px 0 0 0;
+  color: var(--accent-color);
+}
+
+.mainIntro {
+  margin: 110px 0 0 20px;
+  line-height: 50px;
+}
